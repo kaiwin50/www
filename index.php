@@ -11,9 +11,9 @@
   <img src=hat_girls.jpg width="150" height="200">
 <h1>:: My favorite web ::</h1>
   Hololive 3th: <a href="https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg" target="_blank">Marine Ch. 宝鐘マリン </a>
+  </br>
 <h1>เรื่องตลก</h1>
-  
-  
+<b> ปลุกฉันมาทำไม? </b>
   <b>หมอ:</b> ตื่นๆ</br>
   <b>คนไข้:</b> ปลุกผมทำไมครับหมอ?</br>
   <b>หมอ:</b> ปลุกให้กินยา</br>
