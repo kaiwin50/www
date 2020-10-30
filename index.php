@@ -1,4 +1,4 @@
-<?php
+
 <html>
 <head><title>:: About me ::</title></head>
 <body>
@@ -22,4 +22,3 @@ Hololive 3th: <a href="https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg"
 
 </body>
 </html>
-?>
