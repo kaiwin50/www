@@ -7,11 +7,11 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         
     </head>
-    <body style="background-color:wheat;">
+    <body background="bg.jpg">
         <br><br><br>
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
                     <div class="card-fluid rounded" style="background-color:lightyellow; height: 430px;">
                         <img class="card-img-top" src="saber.jpg" style="height:200px; width:100%">
                         <div class="card-body">
@@ -24,10 +24,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
                     <div class="card-fluid rounded" style="background-color:lightyellow; height: 430px;">
                         <img class="card-img-top" src="lancer.jpg" style="height:200px; width:100%">
-                        <div class="card-body">
+                        <div class="card-body" col-md-6>
                             <h6 class="card-title" style="color:darkgoldenrod">Class Lancer</h6>
                             <p style="color:gray">—Knight of the Lance and Heroic Spirit of the Lance.
                                  Gifted with extreme agility and proficient in hit-and-run tactics as well
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
                     <div class="card-fluid rounded" style="background-color:lightyellow; height: 430px;">
                         <img class="card-img-top" src="archer.jfif" style="height:200px; width:100%">
                         <div class="card-body">
