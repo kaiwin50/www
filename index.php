@@ -10,34 +10,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-6 col-xl-6">
-                    <img src="img\creative\creative.jpg" class="img-fluid rounded" style="height:100%; width:100%"/>
+                    <img src="creative.jpg" class="img-fluid rounded" style="height:100%; width:100%"/>
                 </div>
                 <div class="col-md-3 col-lg-2 col-xl-2">
                     <div class="row">
                         <div class="col">
-                            <img src="img\creative\creative2.jpg" class="img-fluid rounded" style="height:250px; width:100%"/>
+                            <img src="creative2.jpg" class="img-fluid rounded" style="height:250px; width:100%"/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <img src="img\creative\creative3.jpg" class="img-fluid rounded" style="height:250px; width:100%"/>
+                            <img src="creative3.jpg" class="img-fluid rounded" style="height:250px; width:100%"/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <img src="img\creative\creative4.jpg" class="img-fluid rounded" style="height:250px; width:100%"/>
+                            <img src="creative4.jpg" class="img-fluid rounded" style="height:250px; width:100%"/>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-lg-4 col-xl-4">
                     <div class="row">
                         <div class="col">
-                            <img src="img\creative\creative5.jpg" class="img-fluid rounded" style="height:375; width:100%"/>
+                            <img src="creative5.jpg" class="img-fluid rounded" style="height:375; width:100%"/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <img src="img\creative\creative6.jpg" class="img-fluid rounded" style="height:375; width:100%"/>
+                            <img src="creative6.jpg" class="img-fluid rounded" style="height:375; width:100%"/>
                         </div>
                     </div>
                 </div>
