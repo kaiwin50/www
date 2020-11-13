@@ -18,33 +18,41 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<table width="600" class="table table-bordered">
-  <thead class="thead-light">
-    <tr>
-      <th width="25"> <div align="center">ID</div></th>
-      <th width="100"> <div align="center">Name</div></th>
-      <th width="225"> <div align="center">Comment </div></th>
-      <th width="150"> <div align="center">Link </div></th>
-      <th width="100"></th>
-    </tr>
+<div class="container">
+  <div class="row">
+    <div class="col m-auto>
+      <div class="col mt-5>
+        <table width="600" class="table table-bordered">
+          <thead class="thead-light">
+          <tr>
+            <th width="25"> <div align="center">ID</div></th>
+            <th width="100"> <div align="center">Name</div></th>
+            <th width="225"> <div align="center">Comment </div></th>
+            <th width="150"> <div align="center">Link </div></th>
+            <th width="100"></th>
+          </tr>
 <?php
-while($Result = mysqli_fetch_array($res))
+          while($Result = mysqli_fetch_array($res))
 {
-    $UserID = $Result['ID'];
+           $UserID = $Result['ID'];
 ?>
-    <tr>
-      <td><?php echo $UserID;?></div></td>
-      <td><?php echo $Result['NAME'];?></div></td>
-      <td><?php echo $Result['Comment'];?></td>
-      <td><?php echo $Result['Link'];?></td>
-      <td><a href="update.php?GetID=<?php echo $UserID ?>"><button type="button" class="btn btn-primary">Edit</button></a>
-        <a href="delete.php?GetID=<?php echo $UserID ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>
-    </tr>
+           <tr>
+             <td><?php echo $UserID;?></div></td>
+             <td><?php echo $Result['NAME'];?></div></td>
+             <td><?php echo $Result['Comment'];?></td>
+             <td><?php echo $Result['Link'];?></td>
+             <td><a href="update.php?GetID=<?php echo $UserID ?>"><button type="button" class="btn btn-primary">Edit</button></a>
+               <a href="delete.php?GetID=<?php echo $UserID ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>
+           </tr>
 <?php
 }
 ?>
-  </thead>
-</table>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
 <?php
 mysqli_close($conn);
 ?>
