@@ -29,20 +29,24 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
             <th width="100"> <div align="center">Name</div></th>
             <th width="225"> <div align="center">Comment </div></th>
             <th width="150"> <div align="center">Link </div></th>
-            <th width="100"></th>
+            <th width="50">Edit</th>
+            <th width="50">Delete</th>
           </tr>
 <?php
           while($Result = mysqli_fetch_array($res))
 {
            $UserID = $Result['ID'];
+           $Name = $Result['NAME'];
+           $Comment = $Result['Comment'];
+           $Link = $Result['Link'];
 ?>
            <tr>
              <td><?php echo $UserID;?></div></td>
-             <td><?php echo $Result['NAME'];?></div></td>
-             <td><?php echo $Result['Comment'];?></td>
-             <td><?php echo $Result['Link'];?></td>
-             <td><a href="update.php?GetID=<?php echo $UserID ?>"><button type="button" class="btn btn-primary">Edit</button></a>
-               <a href="delete.php?GetID=<?php echo $UserID ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>
+             <td><?php echo $Name;?></div></td>
+             <td><?php echo $Comment;?></td>
+             <td><?php echo $Link;?></td>
+             <td><a href="update.php?GetID=<?php echo $UserID ?>"><button type="button" class="btn btn-primary">Edit</button></a></td>
+             <td><a href="delete.php?GetID=<?php echo $UserID ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>
            </tr>
 <?php
 }
