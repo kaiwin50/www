@@ -13,25 +13,23 @@ if (mysqli_connect_errno($conn))
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
 <table width="600" class="table table-bordered">
-  <thead class="thead-dark">
-    <tr>
-        <th width="100"> <div align="center">Name</div></th>
-        <th width="350"> <div align="center">Comment </div></th>
-        <th width="150"> <div align="center">Link </div></th>
-    </tr>
+  <tr>
+    <th width="100"> <div align="center">Name</div></th>
+    <th width="350"> <div align="center">Comment </div></th>
+    <th width="150"> <div align="center">Link </div></th>
+  </tr>
 <?php
 while($Result = mysqli_fetch_array($res))
 {
 ?>
-    <tr>
-        <td><?php echo $Result['NAME'];?></div></td>
-        <td><?php echo $Result['Comment'];?></td>
-        <td><?php echo $Result['Link'];?></td>
-    </tr>
+  <tr>
+    <td><?php echo $Result['NAME'];?></div></td>
+    <td><?php echo $Result['Comment'];?></td>
+    <td><?php echo $Result['Link'];?></td>
+  </tr>
 <?php
 }
 ?>
- </thead>
 </table>
 <?php
 mysqli_close($conn);
