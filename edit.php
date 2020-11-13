@@ -1,22 +1,3 @@
-<?php
-
-  $conn = mysqli_init();
-  mysqli_real_connect($conn, 'kaiwin50.mysql.database.azure.com', 'kaiwin50@kaiwin50', '7144Eba1', 'ITFlab', 3306);
-  require_once("connection.php")
-
-if (mysqli_connect_errno($conn))
-{
-    die('Failed to connect to MySQL: '.mysqli_connect_error());
-}
-$UserID = $_GET['GetID'];
-while($Result = mysqli_fetch_array($res))
-{
-           $UserID = $Result['ID'];
-           $Name = $Result['NAME'];
-           $Comment = $Result['Comment'];
-           $Link = $Result['Link'];
-}
-
 <html>
 <head>
 <title>ITF Lab</title>
@@ -28,28 +9,46 @@ while($Result = mysqli_fetch_array($res))
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div class="container">
-        <div class="row">
-            <div class="col lg-6 m-auto">
-                <div class="col mt-5">
-                    <div class="card-title">
-                        <h3 class="bg-success text-white text-center py-3">Update Form</h>
-                    </div>
-                    <div class="card-body">
+<?php
+$conn = mysqli_init();
+mysqli_real_connect($conn, 'kaiwin50.mysql.database.azure.com', 'kaiwin50@kaiwin50', '7144Eba1', 'ITFlab', 3306);
+if (mysqli_connect_errno($conn))
+{
+    die('Failed to connect to MySQL: '.mysqli_connect_error());
+}
+$res = mysqli_query($conn, 'SELECT * FROM guestbook');
+?>
+<div class="container">
+  <div class="row">
+    <div class="col m-auto">
+      <div class="col mt-5">
 
-                        <form action = "update.php" method = "post" id="CommentForm" >
-                            Name:<br>
-                            <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
-                            Comment:<br>
-                            <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
-                            Link:<br>
-                            <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
-                            <input type="submit" id="commentBtn">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+<?php
+          while($Result = mysqli_fetch_array($res))
+{
+           $UserID = $Result['ID'];
+           $Name = $Result['NAME'];
+           $Comment = $Result['Comment'];
+           $Link = $Result['Link'];
+?>
+            <form action = "update.php" method = "post" id="CommentForm" >
+                Name:<br>
+                <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
+                Comment:<br>
+                <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
+                Link:<br>
+                <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
+                <input type="submit" id="commentBtn">
+            </form>
+<?php
+}
+?>
+      </div>
     </div>
+  </div>
+</div>
+<?php
+mysqli_close($conn);
+?>
 </body>
 </html>
