@@ -30,7 +30,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 <?php
 while($Result = mysqli_fetch_array($res))
 {
-    $id = $row['ID'];
+    $id = $Result['ID'];
 ?>
     <tr>
       <td><?php echo $id;?></div></td>
