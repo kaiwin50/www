@@ -26,11 +26,11 @@ $UserID = $_GET['GetID'];
         </div>
         <div class="card-body">
            
-             <form action="Update.php" method="post">
+             <form action="update.php?ID=<?php echo $UserID ?>" method="post">
                 <input type="text" class="form-control mb-2" placeholder=" Name " name="name">
                 <input type="text" class="form-control mb-2" placeholder=" Comment " name="comment">
                 <input type="text" class="form-control mb-2" placeholder=" Link " name="link">
-                <button class="btn btn-primary" name="submit">Submit</button>
+                <button class="btn btn-primary" name="update">Submit</button>
              </form>
             
         </div>
