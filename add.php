@@ -20,7 +20,7 @@ require_once("connection.php");
       <div class="col mt-5">
         <div class="card-fluid rounded bg-light">
           <div class="card-title">
-            <h4 class="bg-success text-white text-center py-4">Update Form</h>
+            <h4 class="bg-success text-white text-center py-3">Update Form</h>
           </div>
           <div class="card-body">
            
