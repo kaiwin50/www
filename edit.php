@@ -21,7 +21,7 @@ $UserID = $_GET['GetID'];
   <div class="row">
     <div class="col m-auto>
       <div class="col mt-5>
-        <div class="card-title">
+          <div class="card-title bg-light text-dark">
             <h3 class="bg-success text-white text-center">Update Form</h>
         </div>
         <div class="card-body">
