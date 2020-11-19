@@ -2,12 +2,12 @@
 
 require_once("connection.php");
 
-$name = $_POST['name'];
-$comment = $_POST['comment'];
-$link = $_POST['link'];
+$Name = $_POST['name'];
+$Comment = $_POST['comment'];
+$Link = $_POST['link'];
 
 
-$query = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
+$query = "INSERT INTO guestbook (NAME , Comment , Link) VALUES ('$Name', '$Comment', '$Link')";
 
 
 if (mysqli_query($conn, $query)) {
