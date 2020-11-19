@@ -15,6 +15,7 @@ if(isset($_POST['submit']))
     }
     else
     {
+        $UserID = $_GET['ID'];
         $FixName = $_POST['name'];
         $FixComment = $_POST['comment'];
         $FixLink = $_POST['link'];
