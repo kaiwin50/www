@@ -31,9 +31,9 @@ $UserID = $_GET['GetID'];
         <div class="card-body">
            
              <form action="insert.php" method="post">
-                <input type="text" class="form-control mb-2" placeholder=" User Name " name="name" value="<?php echo $Name?>
-                <input type="email" class="form-control mb-2" placeholder=" User Email " name="email">
-                <input type="text" class="form-control mb-2" placeholder=" User Age " name="age">
+                <input type="text" class="form-control mb-2" placeholder=" Name " name="name">
+                <input type="email" class="form-control mb-2" placeholder=" Comment " name="comment">
+                <input type="text" class="form-control mb-2" placeholder=" Link " name="link">
                 <button class="btn btn-primary" name="submit">Submit</button>
              </form>
             
