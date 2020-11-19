@@ -20,12 +20,13 @@ if(isset($_POST['submit']))
         $FixComment = $_POST['comment'];
         $FixLink = $_POST['link'];
 
-        $query = "UPDATE guestbook SET NAME='".$FixName."', Comment='".$FixComment."', Link='".$FixLink."' WHERE ID='".$UserID."'";
+        $query = "UPDATE guestbook SET NAME='".$FixName."', Comment='".$FixComment."', Link='".$FixLink."' where ID='".$UserID."'";
         $result = mysqli_query($conn, $query);
 
         if($result)
         {
-            header("location:index.php");
+            echo $UserID
+            echo $FixName
         }
         else
         {
