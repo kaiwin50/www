@@ -19,18 +19,20 @@ require_once("connection.php");
   <div class="row">
     <div class="col m-auto">
       <div class="col mt-5">
-        <div class="card-title">
-            <h3 class="bg-success text-white text-center">Add Form</h>
-        </div>
-        <div class="card-body bg-light">
+        <div class="card-fluid rounded bg-light">
+          <div class="card-title">
+            <h4 class="bg-success text-white text-center py-3">Update Form</h>
+          </div>
+          <div class="card-body">
            
              <form action="insert.php" method="post">
                 <input type="text" class="form-control mb-2" placeholder=" Name " name="name">
                 <input type="text" class="form-control mb-2" placeholder=" Comment " name="comment">
                 <input type="text" class="form-control mb-2" placeholder=" Link " name="link">
-                <button class="btn btn-primary" name="submit">Add++</button>
+                <button class="btn btn-primary" name="update">Submit</button>
              </form>
             
+          </div> 
         </div>
       </div>
     </div>
