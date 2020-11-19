@@ -8,13 +8,7 @@ if (mysqli_connect_errno($conn))
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 
 $UserID = $_GET['GetID'];
-while($Result = mysqli_fetch_array($res))
-{
-           $UserID = $Result['ID'];
-           $Name = $Result['NAME'];
-           $Comment = $Result['Comment'];
-           $Link = $Result['Link'];
-}
+
 ?>
 <html>
 <head>
@@ -29,19 +23,21 @@ while($Result = mysqli_fetch_array($res))
 <body>
 <div class="container">
   <div class="row">
-    <div class="col m-auto">
-      <div class="col mt-5">
-
-            <form action = "update.php" method = "post" id="CommentForm" >
-                Name:<br>
-                <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
-                Comment:<br>
-                <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
-                Link:<br>
-                <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
-                <input type="submit" id="commentBtn">
-            </form>
-
+    <div class="col m-auto>
+      <div class="col mt-5>
+        <div class="card-title">
+            <h3 class="bg-seccess text-white text-center">Update Form</h>
+        </div>
+        <div class="card-body">
+           
+             <form action="insert.php" method="post">
+                <input type="text" class="form-control mb-2" placeholder=" User Name " name="name" value="<?php echo $Name?>
+                <input type="email" class="form-control mb-2" placeholder=" User Email " name="email">
+                <input type="text" class="form-control mb-2" placeholder=" User Age " name="age">
+                <button class="btn btn-primary" name="submit">Submit</button>
+             </form>
+            
+        </div>
       </div>
     </div>
   </div>
