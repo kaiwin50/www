@@ -58,7 +58,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   </div>
 </div>
 <div align="center">
-  <button type="button" class="btn btn-primary">ADD+</botton>
+  <a href="add.php"><button type="button" class="btn btn-primary">ADD+</botton></a>
 </div>
 <?php
 mysqli_close($conn);
