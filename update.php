@@ -8,17 +8,17 @@ if (mysqli_connect_errno($conn))
 }
 if(isset($_POST['submit']))
 {
-    if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['age']))
+    if(empty($_POST['NAME']) || empty($_POST['Comment']) || empty($_POST['Link']))
     {
         echo ' Please Fill in the Blanks ';
     }
     else
     {
-        $UserName = $_POST['name'];
-        $UserEmail = $_POST['email'];
-        $UserAge = $_POST['age'];
+        $FixName = $_POST['name'];
+        $FixComment = $_POST['comment'];
+        $FixLink = $_POST['link'];
 
-        $query = " insert into records (User_Name, User_Email,User_Age) values('$UserName','$UserEmail','$UserAge')";
+        $query = " insert into records (NAME, Comment, Link) values('$','$UserEmail','$UserAge')";
         $result = mysqli_query($con,$query);
 
         if($result)
