@@ -6,9 +6,10 @@ if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
+
 if(isset($_POST['submit']))
 {
-    if(empty($_POST['NAME']) || empty($_POST['Comment']) || empty($_POST['Link']))
+    if(empty($_POST['name']) || empty($_POST['comment']) || empty($_POST['link']))
     {
         echo ' Please Fill in the Blanks ';
     }
@@ -38,12 +39,4 @@ else
 
 
 
-?>
-if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-  } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-  }
-  
-mysqli_close($conn);
 ?>
