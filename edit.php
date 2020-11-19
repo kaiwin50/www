@@ -22,7 +22,7 @@ $UserID = $_GET['GetID'];
     <div class="col m-auto>
       <div class="col mt-5>
         <div class="card-title">
-            <h3 class="bg-seccess text-white text-center">Update Form</h>
+            <h3 class="bg-success text-white text-center">Update Form</h>
         </div>
         <div class="card-body">
            
