@@ -19,7 +19,7 @@ if(isset($_POST['submit']))
         $FixComment = $_POST['comment'];
         $FixLink = $_POST['link'];
 
-        $query = " insert into records (NAME, Comment, Link) values('$FixName','$FixComment','$FixLink')";
+        $query = "UPDATE guestbook SET NAME='".$name."', Comment='".$comment."', Link='".$link."' WHERE ID='".$UserID."'";
         $result = mysqli_query($con,$query);
 
         if($result)
