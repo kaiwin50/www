@@ -1,12 +1,6 @@
 <?php
 
-$conn = mysqli_init();
-mysqli_real_connect($conn, 'kaiwindata.mysql.database.azure.com', 'kaiwin50@kaiwindata', '7144Eba1', 'ITFlab', 3306);
-if (mysqli_connect_errno($conn))
-{
-    die('Failed to connect to MySQL: '.mysqli_connect_error());
-}
-
+require_once("connection.php");
 
 $name = $_POST['name'];
 $comment = $_POST['comment'];
