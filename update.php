@@ -23,7 +23,7 @@ if(isset($_POST['submit']))
 
         if($result)
         {
-            header("location:view.php");
+            header("location:index.php");
         }
         else
         {
