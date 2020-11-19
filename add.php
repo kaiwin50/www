@@ -14,14 +14,13 @@ require_once("connection.php");
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body class="bg-dark">
-  <br><br></br></br>
 <div class="container">
   <div class="row">
     <div class="col m-auto">
       <div class="col mt-5">
         <div class="card-fluid rounded bg-light">
           <div class="card-title">
-            <h4 class="bg-success text-white text-center py-3">Update Form</h>
+            <h4 class="bg-success text-white text-center">Update Form</h>
           </div>
           <div class="card-body">
            
