@@ -15,8 +15,8 @@ if(isset($_POST['update']))
     $link = $_POST['Link'];
 
 
-    $sql = "UPDATE guestbook SET NAME='".$name."', Comment='".$comment."', Link='".$link."' WHERE ID='".$UserID."'";
-    $result = mysqli_sql($conn,$sql)
+    $query = "UPDATE guestbook SET NAME='".$name."', Comment='".$comment."', Link='".$link."' WHERE ID='".$UserID."'";
+    $result = mysqli_query($conn, $query)
 }
 else
 {
