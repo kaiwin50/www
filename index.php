@@ -26,11 +26,11 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
           <thead class="thead-light">
           <tr>
             <th width="25"> <div align="center">ID</div></th>
-            <th width="100"> <div align="center">Name</div></th>
+            <th width="150"> <div align="center">Name</div></th>
             <th width="300"> <div align="center">Comment </div></th>
             <th width="175"> <div align="center">Link </div></th>
-            <th width="50">Edit</th>
-            <th width="50">Delete</th>
+            <th>Edit</th>
+            <th>Delete</th>
           </tr>
 <?php
           while($Result = mysqli_fetch_array($res))
