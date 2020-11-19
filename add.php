@@ -23,7 +23,7 @@ require_once("connection.php");
         </div>
         <div class="card-body">
            
-             <form action="insert.php>" method="post">
+             <form action="insert.php" method="post">
                 <input type="text" class="form-control mb-2" placeholder=" Name " name="name">
                 <input type="text" class="form-control mb-2" placeholder=" Comment " name="comment">
                 <input type="text" class="form-control mb-2" placeholder=" Link " name="link">
