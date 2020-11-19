@@ -2,6 +2,7 @@
 
 require_once("connection.php");
 
+?>
 <html>
 <head>
 <title>ITF Lab</title>
