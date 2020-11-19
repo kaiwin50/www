@@ -21,10 +21,11 @@ $UserID = $_GET['GetID'];
   <div class="row">
     <div class="col m-auto">
       <div class="col mt-5">
-          <div class="card-title text-dark">
+        <div class="card-fluid rounded bg-light">
+          <div class="card-title">
             <h3 class="bg-success text-white text-center">Update Form</h>
-        </div>
-        <div class="card-body bg-light">
+          </div>
+          <div class="card-body">
            
              <form action="update.php?ID=<?php echo $UserID ?>" method="post">
                 <input type="text" class="form-control mb-2" placeholder=" Name " name="name">
@@ -33,6 +34,7 @@ $UserID = $_GET['GetID'];
                 <button class="btn btn-primary" name="update">Submit</button>
              </form>
             
+          </div> 
         </div>
       </div>
     </div>
