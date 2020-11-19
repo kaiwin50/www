@@ -18,11 +18,11 @@ require_once("connection.php");
     <div class="col m-auto>
       <div class="col mt-5>
         <div class="card-title">
-            <h3 class="bg-seccess text-white text-center">Update Form</h>
+            <h3 class="bg-success text-white text-center">Add Form</h>
         </div>
         <div class="card-body">
            
-             <form action="update.php?ID=<?php echo $UserID ?>" method="post">
+             <form action="insert.php>" method="post">
                 <input type="text" class="form-control mb-2" placeholder=" Name " name="name">
                 <input type="text" class="form-control mb-2" placeholder=" Comment " name="comment">
                 <input type="text" class="form-control mb-2" placeholder=" Link " name="link">
