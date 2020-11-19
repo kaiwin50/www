@@ -8,7 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body class="bg-dark">
+<body>
 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'kaiwindata.mysql.database.azure.com', 'kaiwin50@kaiwindata', '7144Eba1', 'ITFlab', 3306);
@@ -22,9 +22,9 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   <div class="row">
     <div class="col m-auto>
       <div class="col mt-5>
-        <table width="600" class="table table-bordered bg-light">
+        <table width="600" class="table table-bordered">
           <thead class="thead-light">
-          <tr class="bg-secondary>
+          <tr class="bg-secondary">
             <th width="25"> <div align="center">ID</div></th>
             <th width="150"> <div align="center">Name</div></th>
             <th width="300"> <div align="center">Comment </div></th>
@@ -40,7 +40,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
            $Comment = $Result['Comment'];
            $Link = $Result['Link'];
 ?>
-           <tr>
+           <tr class="bg-light">
              <td><?php echo $UserID;?></div></td>
              <td><?php echo $Name;?></div></td>
              <td><?php echo $Comment;?></td>
