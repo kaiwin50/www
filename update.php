@@ -2,7 +2,7 @@
 
 require_once("connection.php");
 
-if(isset($_POST['submit']))
+if(isset($_POST['update']))
 {
     if(empty($_POST['name']) || empty($_POST['comment']) || empty($_POST['link']))
     {
