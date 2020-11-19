@@ -14,6 +14,7 @@ require_once("connection.php");
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body class="bg-dark">
+  <br><br></br></br>
 <div class="container">
   <div class="row">
     <div class="col m-auto">
@@ -21,7 +22,7 @@ require_once("connection.php");
         <div class="card-title">
             <h3 class="bg-success text-white text-center">Add Form</h>
         </div>
-        <div class="card-body">
+        <div class="card-body bg-light">
            
              <form action="insert.php" method="post">
                 <input type="text" class="form-control mb-2" placeholder=" Name " name="name">
