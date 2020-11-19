@@ -6,22 +6,39 @@ if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
+if(isset($_POST['submit']))
+{
+    if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['age']))
+    {
+        echo ' Please Fill in the Blanks ';
+    }
+    else
+    {
+        $UserName = $_POST['name'];
+        $UserEmail = $_POST['email'];
+        $UserAge = $_POST['age'];
 
-if(isset($_POST['update']))
-{  
-    $UserID = $_GET['ID']
-    $name = $_POST['NAME'];
-    $comment = $_POST['Comment'];
-    $link = $_POST['Link'];
+        $query = " insert into records (User_Name, User_Email,User_Age) values('$UserName','$UserEmail','$UserAge')";
+        $result = mysqli_query($con,$query);
 
-
-    $query = "UPDATE guestbook SET NAME='".$name."', Comment='".$comment."', Link='".$link."' WHERE ID='".$UserID."'";
-    $result = mysqli_query($conn, $query)
+        if($result)
+        {
+            header("location:view.php");
+        }
+        else
+        {
+            echo '  Please Check Your Query ';
+        }
+    }
 }
 else
 {
-    header("location:index.php)
+    header("location:index.php");
+}
 
+
+
+?>
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
   } else {
