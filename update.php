@@ -18,7 +18,7 @@ if(isset($_POST['submit']))
         $FixComment = $_POST['comment'];
         $FixLink = $_POST['link'];
 
-        $query = " insert into records (NAME, Comment, Link) values('$','$UserEmail','$UserAge')";
+        $query = " insert into records (NAME, Comment, Link) values('$FixName','$FixComment','$FixLink')";
         $result = mysqli_query($con,$query);
 
         if($result)
