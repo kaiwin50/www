@@ -20,7 +20,7 @@ if(isset($_POST['submit']))
         $FixLink = $_POST['link'];
 
         $query = "UPDATE guestbook SET NAME='".$name."', Comment='".$comment."', Link='".$link."' WHERE ID='".$UserID."'";
-        $result = mysqli_query($con,$query);
+        $result = mysqli_query($conn, $query);
 
         if($result)
         {
