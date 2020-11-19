@@ -32,7 +32,7 @@ $UserID = $_GET['GetID'];
            
              <form action="insert.php" method="post">
                 <input type="text" class="form-control mb-2" placeholder=" Name " name="name">
-                <input type="email" class="form-control mb-2" placeholder=" Comment " name="comment">
+                <input type="text" class="form-control mb-2" placeholder=" Comment " name="comment">
                 <input type="text" class="form-control mb-2" placeholder=" Link " name="link">
                 <button class="btn btn-primary" name="submit">Submit</button>
              </form>
