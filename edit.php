@@ -1,20 +1,10 @@
 <?php
-$conn = mysqli_init();
-mysqli_real_connect($conn, 'kaiwin50.mysql.database.azure.com', 'kaiwin50@kaiwin50', '7144Eba1', 'ITFlab', 3306);
-if (mysqli_connect_errno($conn))
-{
-    die('Failed to connect to MySQL: '.mysqli_connect_error());
-}
-$res = mysqli_query($conn, 'SELECT * FROM guestbook');
+
+require_once("connection.php");
+
 
 $UserID = $_GET['GetID'];
-while($Result = mysqli_fetch_array($res))
-{
-           $UserID = $Result['ID'];
-           $Name = $Result['NAME'];
-           $Comment = $Result['Comment'];
-           $Link = $Result['Link'];
-}
+
 ?>
 <html>
 <head>
@@ -26,22 +16,26 @@ while($Result = mysqli_fetch_array($res))
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="bg-dark">
 <div class="container">
   <div class="row">
     <div class="col m-auto">
       <div class="col mt-5">
-
-            <form action = "update.php" method = "post" id="CommentForm" >
-                Name:<br>
-                <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
-                Comment:<br>
-                <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
-                Link:<br>
-                <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
-                <input type="submit" id="commentBtn">
-            </form>
-
+        <div class="card-fluid rounded bg-light">
+          <div class="card-title">
+            <h4 class="bg-success text-white text-center py-3">Edit Form</h>
+          </div>
+          <div class="card-body">
+           
+             <form action="update.php?ID=<?php echo $UserID ?>" method="post">
+                <input type="text" class="form-control mb-2" placeholder=" Name " name="name">
+                <input type="text" class="form-control mb-2" placeholder=" Comment " name="comment">
+                <input type="text" class="form-control mb-2" placeholder=" Link " name="link">
+                <button class="btn btn-primary" name="update">Submit</button>
+             </form>
+            
+          </div> 
+        </div>
       </div>
     </div>
   </div>
