@@ -24,9 +24,9 @@ require_once("connection2.php");
           <div class="card-body">
            
              <form action="insert.php" method="post">
-                <input type="text" class="form-control mb-2" placeholder=" Name " name="name">
-                <input type="text" class="form-control mb-2" placeholder=" Comment " name="comment">
-                <input type="text" class="form-control mb-2" placeholder=" Link " name="link">
+                <input type="text" class="form-control mb-2" placeholder=" Product " name="product">
+                <input type="text" class="form-control mb-2" placeholder=" Price " name="price">
+                <input type="text" class="form-control mb-2" placeholder=" Amount " name="amount">
                 <button class="btn btn-primary" name="update">Submit</button>
              </form>
             
