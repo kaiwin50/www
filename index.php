@@ -38,13 +38,13 @@ $res = mysqli_query($conn, 'SELECT * FROM shop');
            $Product = $Result['Product'];
            $Price = $Result['Price'];
            $Amount = $Result['Amount'];
-           $Total = %Result['Total'];
+           $Total = $Result['Total'];
 ?>
            <tr class="bg-light">
              <td><?php echo $Product;?></div></td>
              <td><?php echo $Price;?></td>
              <td><?php echo $Amount;?></td>
-             <td><?php echo $Total></td> 
+             <td><?php echo $Total;?></td> 
              <td><a href="delete.php?GetID=<?php echo $UserID ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>
            </tr>
 <?php
