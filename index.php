@@ -45,7 +45,7 @@ $res = mysqli_query($conn, 'SELECT * FROM shop');
              <td><?php echo $Price;?></td>
              <td><?php echo $Amount;?></td>
              <td><?php echo $Total;?></td> 
-             <td><a href="delete.php?GetID=<?php echo $UserID ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>
+             <td><a href="delete2.php?GetID=<?php echo $UserID ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>
            </tr>
 <?php
 }
@@ -57,7 +57,7 @@ $res = mysqli_query($conn, 'SELECT * FROM shop');
   </div>
 </div>
 <div align="center">
-  <a href="add.php"><button type="button" class="btn btn-success">Add++</button></a>
+  <a href="add2.php"><button type="button" class="btn btn-success">Add++</button></a>
 </div>
 <?php
 mysqli_close($conn);
