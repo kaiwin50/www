@@ -3,7 +3,7 @@
 require_once("connection2.php");
 
 $Name = $_POST['product'];
-$Price = $_POST'price'];
+$Price = $_POST['price'];
 $Amount = $_POST['amount'];
 
 $query = "INSERT INTO shop (Product , Price , Amount) VALUES ('$Product', '$Price', '$Amount')";
