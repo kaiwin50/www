@@ -38,7 +38,7 @@ $res = mysqli_query($conn, 'SELECT * FROM shop');
            $Product = $Result['Product'];
            $Price = $Result['Price'];
            $Amount = $Result['Amount'];
-           $Total = %Result[Total]
+           $Total = %Result['Total']
 ?>
            <tr class="bg-light">
              <td><?php echo $Product;?></div></td>
