@@ -3,10 +3,10 @@
 require_once("connection.php");
 
 
-$UserID = $_GET['GetID'];
+$ProductID = $_GET['GetID'];
 
 
-$sql = "DELETE FROM guestbook WHERE ID=$UserID";
+$sql = "DELETE FROM shop WHERE ID=$ProductID";
 
 if ($conn->query($sql) === TRUE) {
   header("location:index.php");
